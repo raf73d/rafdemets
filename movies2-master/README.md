@@ -1,1 +1,3 @@
-
+backend die babbelt met database. films met zijn regisseurs, acteurs, genres.... 
+java, sql
+spring jpa hibernate

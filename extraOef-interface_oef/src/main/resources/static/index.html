@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>extra oefening</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/index.js" type="module"></script>
+    <link rel="icon" href="images/star_wars_logo_PNG28.png">
+</head>
+<body>
+<div class="container-lg bg-light-subtle">
+
+    <div class="row">
+        <div class="col-2">
+            Geef een id in:
+        </div>
+        <div class="col-1">
+            <input id="input" type="number" min="1" required>
+        </div>
+        <div class="col-3">
+            <div id="mededeling" hidden class="bg-danger-subtle text-white p-2 rounded">Mens achter de Id niet
+                gevonden!
+            </div>
+            <div id="mededeling2" hidden class="bg-danger-subtle text-white p-2 rounded">Id invoer is tussen 1 en <span
+                    id="maxgrens"></span>!
+            </div>
+        </div>
+        <div class="col-5"></div>
+        <div class="col-1">
+            <figure class="figure">
+                <img src="/images/star_wars_logo_PNG28.png"
+                     class="figure-img img-fluid rounded rotate-hover"
+                     alt="Star Wars Logo">
+            </figure>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <button class="btn-outline-dark rounded-0" id="checkButton">check</button>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead id="thead" hidden>
+        <th>naam</th>
+        <th>hoogte</th>
+        <th>gewicht</th>
+        <th>aangemaakte datum</th>
+        </thead>
+        <tbody id="startTabel"></tbody>
+
+    </table>
+    <div class="row">
+        <div class="col-12">
+    <table class="table table-striped">
+        <thead id="thead2" hidden>
+        <th>films</th>
+        </thead>
+        <tbody id="filmsTabel"></tbody>
+    </table>
+            </div>
+    </div>
+</div>
+
+</body>
+</html>
+<style>
+    .rotate-hover:hover {
+        transform: rotate(360deg);
+        transition: transform 1s ease-in-out;
+    }
+</style>

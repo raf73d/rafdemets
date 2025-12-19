@@ -1,0 +1,4 @@
+{
+"klantId" : {{klantId}},
+"filmIds" :[{{filmId1}},{{filmId2}}]
+}

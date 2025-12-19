@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Klanten</title>
+    <script src="js/klant.js" type ="module"></script>
+    <link rel="icon" href="images/movies.ico">
+    <link rel="stylesheet" href="css/luigi.css">
+</head>
+<body>
+<h1>Klant</h1>
+<label>Woord:
+    <span id="woordFout" class="fout" hidden>woord nok, typ minstens 1 letter</span>
+    <input id="woord" required pattern="[A-Za-zéèÉÈ][A-Za-zéèÉÈ\s\-]*"
+           autofocus>
+    </label>
+<button id="zoek">Zoek</button>
+
+<table>
+    <thead>
+    <tr id="tabelHoofd" hidden>
+        <th>naam</th>
+        <th>straat-huisnummer</th>
+        <th>postcode</th>
+        <th>gemeente</th>
+    </tr>
+    </thead>
+    <tbody id="klantenBody"></tbody>
+
+</table>
+<nav>
+    <ul>
+        <li>
+            <a href="index.html">Startpagina</a>
+            <a href="mandje.html">Mandje</a>
+
+        </li>
+    </ul>
+</nav>
+<div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+<div id="conflict" class="fout" hidden></div>
+<div id="badRequest" class="fout" hidden></div>
+<div id="mededeling" class="mededeling" hidden>Klant(en) niet gevonden.</div>
+</body>
+</html>

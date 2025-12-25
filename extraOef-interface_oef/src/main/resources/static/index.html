@@ -15,14 +15,25 @@
             Geef een id in:
         </div>
         <div class="col-1">
-            <input id="input" type="number" min="1" required>
+            <input id="input" type="number" min="1" required autofocus>
         </div>
         <div class="col-3">
+            <div id="mededeling3" hidden class="bg-success text-white p-2 rounded">Bezig met informatie op te halen...
+            </div>
             <div id="mededeling" hidden class="bg-danger-subtle text-white p-2 rounded">Mens achter de Id niet
                 gevonden!
             </div>
             <div id="mededeling2" hidden class="bg-danger-subtle text-white p-2 rounded">Id invoer is tussen 1 en <span
                     id="maxgrens"></span>!
+            </div>
+            <div id="probleemDatabase" hidden class="bg-danger-subtle text-white p-2 rounded"> probleem database
+            </div>
+
+            <div id="dubbelPersoonDatabase" hidden class="bg-danger-subtle text-white p-2 rounded"> persoon zit reeds in
+                database
+            </div>
+            <div id="naamPersoon" hidden class="bg-success text-white p-2 rounded"><span id="naamFiguur"></span>
+                is toegevoegd met id <span id="idFiguur"></span>
             </div>
         </div>
         <div class="col-5"></div>
@@ -38,26 +49,56 @@
         <div class="col-1">
             <button class="btn-outline-dark rounded-0" id="checkButton">check</button>
         </div>
+        <div class="col-1">
+            <button class="btn-outline-dark rounded-0" id="databaseButton" hidden>push</button>
+        </div>
     </div>
     <table class="table table-striped">
         <thead id="thead" hidden>
-        <th>naam</th>
-        <th>hoogte</th>
-        <th>gewicht</th>
-        <th>aangemaakte datum</th>
+        <tr>
+            <th>figuur</th>
+        </tr>
+        <tr>
+            <th>naam</th>
+            <th>hoogte</th>
+            <th>gewicht</th>
+            <th>aangemaakte datum</th>
+        </tr>
         </thead>
         <tbody id="startTabel"></tbody>
 
     </table>
-    <div class="row">
-        <div class="col-12">
-    <table class="table table-striped">
-        <thead id="thead2" hidden>
-        <th>films</th>
-        </thead>
-        <tbody id="filmsTabel"></tbody>
-    </table>
-            </div>
+    <div class="row gx-6">
+        <div class="col-4">
+            <table class="table table-striped">
+                <thead id="thead2" hidden>
+                <tr>
+                    <th>film</th>
+                </tr>
+                <tr>
+                    <th>titel</th>
+                </tr>
+                </thead>
+                <tbody id="filmsTabel"></tbody>
+            </table>
+        </div>
+
+        <div class="col-8">
+            <table class="table table-striped">
+                <thead id="thead3" hidden>
+                <tr>
+                    <th>schip</th>
+                </tr>
+                <tr>
+                    <th>naam</th>
+                    <th>model</th>
+                    <th>fabrikant</th>
+                    <th>klasse</th>
+                </tr>
+                </thead>
+                <tbody id="shipsTabel"></tbody>
+            </table>
+        </div>
     </div>
 </div>
 

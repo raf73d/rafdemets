@@ -15,6 +15,7 @@ public record Mens(Result result) {
                 , @JsonProperty("name") String naam
                 , @JsonProperty("height") String hoogte
                 , @JsonProperty("mass") String gewicht,
+                          List<URI> starships,
                           List<URI> films){}
 
     }
